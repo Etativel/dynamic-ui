@@ -2,6 +2,11 @@ import "./styles/style.css";
 const closeBtn = document.querySelectorAll(".close-dropdown");
 closeBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
+    const buttons = document.querySelectorAll(".nav-btn");
+    buttons.forEach((button) => {
+      button.style.backgroundColor = "black";
+      button.style.color = "white";
+    });
     btn.closest(".dropdown-content").style.visibility = "hidden";
   });
 });
@@ -19,20 +24,16 @@ function showDropdown(content) {
   }
 }
 
-const tutorialBtn = document.querySelector(".tutorial-btn");
-const exercisesBtn = document.querySelector(".exercises-btn");
-const certificatesBtn = document.querySelector(".certificates-btn");
-const servicesBtn = document.querySelector(".services-btn");
-
-tutorialBtn.addEventListener("click", () => {
-  showDropdown("tutorial");
-});
-exercisesBtn.addEventListener("click", () => {
-  showDropdown("exercises");
-});
-certificatesBtn.addEventListener("click", () => {
-  showDropdown("certificates");
-});
-servicesBtn.addEventListener("click", () => {
-  showDropdown("services");
+const buttons = document.querySelectorAll(".nav-btn");
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    buttons.forEach((button) => {
+      button.style.backgroundColor = "black";
+      button.style.color = "white";
+    });
+    button.style.backgroundColor = "white";
+    button.style.color = "black";
+    console.log(button.classList[0].split("-")[0]);
+    showDropdown(button.classList[0].split("-")[0]);
+  });
 });

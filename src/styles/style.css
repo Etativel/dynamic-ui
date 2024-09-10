@@ -24,15 +24,17 @@ body {
 .nav-btn-container {
   width: 700px;
   display: flex;
-  justify-content: space-evenly;
-  padding: 18px;
+  justify-content: center;
+  /* padding: 18px; */
 }
 
 .nav-btn {
-  padding: 6px;
+  /* padding: 6px; */
   background-color: transparent;
   border: 0px;
   cursor: pointer;
+  height: 50px;
+  width: 100px;
 }
 
 .dropdown-content-container {
