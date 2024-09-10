@@ -2,4 +2,72 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  border: solid white 1px;
+  background-color: black;
+  color: white;
+}
+
+body {
+  height: fit-content;
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
+  position: static;
+}
+.navigation {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.nav-btn-container {
+  width: 700px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 18px;
+}
+
+.nav-btn {
+  padding: 6px;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+
+.dropdown-content-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  /* width: 800px; */
+}
+
+.dropdown-content {
+  position: absolute;
+  height: 100vh;
+  width: 800px;
+  overflow-y: auto;
+  visibility: hidden;
+}
+
+.dropdown-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-dropdown {
+  padding: 12px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.close-dropdown:hover {
+  background-color: white;
+  color: black;
+  border-radius: 6px;
 }
