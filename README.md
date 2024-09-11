@@ -14,7 +14,7 @@ yarn build
 
 to bundle your application
 
-Live preview :
+Live preview : https://etativel.github.io/dynamic-ui/
 
 Resources used:
 
