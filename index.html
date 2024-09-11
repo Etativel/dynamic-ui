@@ -1,12 +1,72 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Webpack App</title>
-    <script defer src="main.js"></script></head>
-    <body>
-        <h1>Hello world!</h1>
-        <h2>Tip: Check your console</h2>
-    </body>
-    
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic User Interface</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="container">
+      <nav class="navigation">
+        <div class="nav-btn-container">
+          <button class="tutorial-btn nav-btn">Tutorials</button>
+          <button class="exercises-btn nav-btn">Exercises</button>
+          <button class="certificates-btn nav-btn">Certificates</button>
+          <button class="services-btn nav-btn">Services</button>
+        </div>
+      </nav>
+      <div class="dropdown-content-container">
+        <div class="tutorial dropdown-content">
+          <div class="dropdown-head">
+            <h1 class="dropdown-title">Tutorial</h1>
+            <button class="close-dropdown">X</button>
+          </div>
+        </div>
+
+        <div class="exercises dropdown-content">
+          <div class="dropdown-head">
+            <h1 class="dropdown-title">Exercises</h1>
+            <button class="close-dropdown">X</button>
+          </div>
+        </div>
+
+        <div class="certificates dropdown-content">
+          <div class="dropdown-head">
+            <h1 class="dropdown-title">Certificates</h1>
+            <button class="close-dropdown">X</button>
+          </div>
+        </div>
+
+        <div class="services dropdown-content">
+          <div class="dropdown-head">
+            <h1 class="dropdown-title">Services</h1>
+            <button class="close-dropdown">X</button>
+          </div>
+        </div>
+        <div class="slideshow-container">
+          <div class="slides fade">
+            <img src="" alt="" class="image-1" />
+          </div>
+          <div class="slides fade">
+            <img src="" alt="" class="image-2" />
+          </div>
+          <div class="slides fade">
+            <img src="" alt="" class="image-3" />
+          </div>
+          <div class="slides fade">
+            <img src="" alt="" class="image-4" />
+          </div>
+          <a class="prev">❮</a>
+          <a class="next">❯</a>
+          <br />
+          <div class="dot-container">
+            <span class="dot d1"></span>
+            <span class="dot d2"></span>
+            <span class="dot d3"></span>
+            <span class="dot d4"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
